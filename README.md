@@ -1,2 +1,2 @@
-# GAPNet
-GAPNet: A Single-Channel Granularity-Aware Pyramid Network with Graph Aggregation for Sleep Staging and Face-Emotional Recognition Speed Prediction
+# MGFNet
+MGFNet: A Graph-Enhanced Multi-Granularity Framework for Single-Channel EEG-Based Sleep Stage Classification and Face-Emotional Recognition Speed Prediction
