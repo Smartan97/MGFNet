@@ -233,9 +233,9 @@ class Feature_Extract(nn.Module):
         return out
        
         
-class PGNet(nn.Module):
+class MGFNet(nn.Module):
     def __init__(self, n_chans=1,n_classes=5):
-        super(PGNet, self).__init__()
+        super(MGFNet, self).__init__()
         self.feature = Feature_Extract(n_chans)
         self.classifier = nn.Sequential(
             nn.Flatten(),
@@ -255,7 +255,7 @@ class PGNet(nn.Module):
 
 if __name__ == "__main__":
     # 测试网络
-    model = PGNet()
+    model = MGFNet()
     test_input = torch.randn(32, 1, 3000)  # batch=2
     output = model(test_input)
     print("输出形状:", output.shape)  # (2, 2) 期望
